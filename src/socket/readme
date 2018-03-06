@@ -1,0 +1,14 @@
+Sample1
+  socket connection establish
+  client gets message from server
+  the server serves one client at a time
+
+Sample2
+  socket connection establish
+  server gets message from client
+  the server serves one client at a time
+
+Sample3: Simple Chat Server (Thread)
+  the server serves multiple clients at the same time
+  the server can handle clients' connection, receive message, and send message at the same time
+  the clients can send and receive message at the same time

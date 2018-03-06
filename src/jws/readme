@@ -1,0 +1,20 @@
+JWS Test Sample
+
+1. Compile java source file
+# cd jws
+# javac -d ../jws_ws HelloJWS.java
+
+2. Create JAR file
+# cd ../jws_ws
+# echo "Main-Class: jws.HelloJWS" > manifest.txt
+# jar -cvmf manifest my.jar jws
+
+3. Configure jnlp file for JWS (in src/jws_ws)
+# vim my.jnlp
+
+4. Prepare index.html
+# echo "<html><body><a href="my.jnlp">Launch My App</a></body><html>" > index.html
+
+5. Launch nginx docker container serve the files (in src/jws_ws)
+# ./run.sh
+

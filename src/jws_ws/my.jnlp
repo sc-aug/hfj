@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="0.2 1.0"
+    codebase="http:192.168.0.2:8080"
+    href="my.jnlp">
+
+  <information>
+    <title>My App</title>
+    <vendor>Chuan</vendor>
+    <homepage href="index.html">
+    <description>Java Web Start demo</description>
+    <offline-allowed/>
+  </information>
+
+  <resources>
+    <j2se version="1.3+" href="http://java.sun.com/products/autodl/j2se" />
+    <jar href="my.jar" />
+  </resources>
+
+</jnlp>
